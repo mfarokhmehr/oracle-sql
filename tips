@@ -1,0 +1,5 @@
+--if you have a column in oracle sql and you want to do calculations on it, but it is giving you an error message of invalid data, 
+--it means you need to prepare your data, to prepare your data you need to remove any extra characters, in my case there are some hourse but the word `houres` is writen there,
+-- and there are sime spaces and some of the decimals are with comma and some are seperated with dots,,
+-- so i will us this code to unify my data
+Replace(Replace(REPLACE(CRS_HOURES,'heures',''),' ',''),'.',','),
